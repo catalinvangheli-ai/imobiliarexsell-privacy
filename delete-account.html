@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ștergere Cont - ImobiliareXSell</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        h1 {
+            color: #dc2626;
+            font-size: 2em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 0.95em;
+        }
+        .warning-box {
+            background-color: #fef2f2;
+            border: 2px solid #fecaca;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+        .warning-box h3 {
+            color: #dc2626;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        .warning-box ul {
+            margin-left: 20px;
+            color: #7f1d1d;
+        }
+        .warning-box li {
+            margin-bottom: 8px;
+        }
+        .info-box {
+            background-color: #eff6ff;
+            border-left: 4px solid #3b82f6;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 4px;
+        }
+        .info-box h3 {
+            color: #1e40af;
+            margin-bottom: 10px;
+        }
+        .steps {
+            margin: 25px 0;
+        }
+        .step {
+            background: #f9fafb;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #3b82f6;
+        }
+        .step-number {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        .contact-method {
+            background: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+            transition: all 0.3s;
+        }
+        .contact-method:hover {
+            border-color: #3b82f6;
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
+        }
+        .contact-method h4 {
+            color: #1e40af;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .contact-method .icon {
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+        .email-template {
+            background: #f3f4f6;
+            padding: 15px;
+            border-radius: 6px;
+            font-family: monospace;
+            font-size: 0.9em;
+            margin-top: 10px;
+            border: 1px solid #d1d5db;
+        }
+        .button {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #2563eb;
+        }
+        .timeline {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        .timeline strong {
+            color: #92400e;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #e5e7eb;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+        .footer a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px;
+            }
+            h1 {
+                font-size: 1.6em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🗑️ Ștergere Cont și Date</h1>
+        <p class="subtitle">ImobiliareXSell App</p>
+
+        <div class="warning-box">
+            <h3>⚠️ Atenție - Acțiune Ireversibilă</h3>
+            <p>Ștergerea contului va rezulta în:</p>
+            <ul>
+                <li><strong>Ștergerea permanentă</strong> a contului și profilului dvs.</li>
+                <li><strong>Eliminarea tuturor anunțurilor</strong> imobiliare postate</li>
+                <li><strong>Pierderea istoricului</strong> conversațiilor din chat</li>
+                <li><strong>Imposibilitatea recuperării</strong> datelor după ștergere</li>
+            </ul>
+        </div>
+
+        <div class="info-box">
+            <h3>📋 Informații importante</h3>
+            <p><strong>Conformitate GDPR:</strong> Avem obligația legală de a șterge datele dvs. personale la cerere, conform Regulamentului General privind Protecția Datelor (GDPR).</p>
+            <p style="margin-top: 10px;"><strong>Termen de procesare:</strong> Solicitarea dvs. va fi procesată în maximum <strong>30 de zile</strong> de la primirea cererii.</p>
+        </div>
+
+        <h2 style="margin-top: 30px; color: #1e40af;">Cum să solicitați ștergerea contului</h2>
+
+        <div class="steps">
+            <div class="step">
+                <span class="step-number">1</span>
+                <strong>Alegeți metoda de contact</strong> preferată de mai jos (email sau în aplicație)
+            </div>
+            <div class="step">
+                <span class="step-number">2</span>
+                <strong>Trimiteți solicitarea</strong> cu informațiile necesare
+            </div>
+            <div class="step">
+                <span class="step-number">3</span>
+                <strong>Confirmați identitatea</strong> (dacă este necesar)
+            </div>
+            <div class="step">
+                <span class="step-number">4</span>
+                <strong>Primiți confirmarea</strong> ștergerii în maximum 30 de zile
+            </div>
+        </div>
+
+        <h2 style="margin-top: 30px; color: #1e40af;">Metode de contact</h2>
+
+        <div class="contact-method">
+            <h4><span class="icon">📧</span> Opțiunea 1: Email</h4>
+            <p>Trimiteți un email la adresa:</p>
+            <p style="font-weight: bold; color: #3b82f6; font-size: 1.1em; margin: 10px 0;">
+                contactimobiliarexsell@gmail.com
+            </p>
+            
+            <div class="email-template">
+                <strong>Subiect:</strong> Solicitare Ștergere Cont GDPR<br><br>
+                <strong>Mesaj:</strong><br>
+                Bună ziua,<br><br>
+                Doresc să solicit ștergerea contului meu și a tuturor datelor personale asociate conform GDPR.<br><br>
+                Email cont: [email-ul tău]<br>
+                Nume: [numele tău]<br>
+                Număr telefon (dacă există): [telefon]<br><br>
+                Vă mulțumesc.
+            </div>
+            
+            <a href="mailto:contactimobiliarexsell@gmail.com?subject=Solicitare%20Stergere%20Cont%20GDPR&body=Buna%20ziua%2C%0A%0ADoresc%20sa%20solicit%20stergerea%20contului%20meu%20si%20a%20tuturor%20datelor%20personale%20asociate%20conform%20GDPR.%0A%0AEmail%20cont%3A%20%0ANume%3A%20%0A%0AVa%20multumesc." class="button">
+                📧 Trimite Email Acum
+            </a>
+        </div>
+
+        <div class="contact-method">
+            <h4><span class="icon">📱</span> Opțiunea 2: Din Aplicație</h4>
+            <ol style="margin-left: 20px;">
+                <li>Deschideți aplicația ImobiliareXSell</li>
+                <li>Mergeți la <strong>Profile</strong> / <strong>Profil</strong></li>
+                <li>Accesați <strong>Settings</strong> / <strong>Setări</strong></li>
+                <li>Selectați <strong>"Șterge Cont"</strong> sau <strong>"Delete Account"</strong></li>
+                <li>Confirmați acțiunea</li>
+            </ol>
+            <p style="margin-top: 10px; color: #666; font-size: 0.9em;">
+                <em>Notă: Dacă opțiunea nu este disponibilă în aplicație, folosiți metoda email de mai sus.</em>
+            </p>
+        </div>
+
+        <div class="timeline">
+            <strong>⏱️ Timp de procesare:</strong> Contul și datele dvs. vor fi șterse complet în termen de <strong>30 de zile calendaristice</strong> de la primirea solicitării. Veți primi o confirmare prin email când procesul este finalizat.
+        </div>
+
+        <div class="info-box" style="margin-top: 30px;">
+            <h3>🔒 Confidențialitate și Securitate</h3>
+            <p>Pentru mai multe informații despre cum gestionăm datele dvs., consultați <a href="privacy-policy.html" style="color: #3b82f6; font-weight: 600;">Politica de Confidențialitate</a>.</p>
+        </div>
+
+        <div class="footer">
+            <p><strong>ImobiliareXSell</strong> - Platformă Imobiliară Europeană</p>
+            <p style="margin-top: 10px;">
+                <a href="privacy-policy.html">Politica de Confidențialitate</a> | 
+                <a href="mailto:contactimobiliarexsell@gmail.com">Contact</a>
+            </p>
+            <p style="margin-top: 15px; color: #999; font-size: 0.85em;">
+                © 2026 ImobiliareXSell. Toate drepturile rezervate.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
